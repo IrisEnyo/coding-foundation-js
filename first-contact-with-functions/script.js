@@ -14,6 +14,12 @@ console.log(calcGrossPrice(40, 0.16));
 
 // 03) Positive Funktion hinzufügen
 function addPositive(x, y) {
+  if (x < 0) {
+    x = -x;
+  }
+  if (y < 0) {
+    y = -y;
+  }
   return x + y;
 }
 console.log(addPositive(2, 3));
